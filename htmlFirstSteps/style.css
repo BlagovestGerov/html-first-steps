@@ -1,0 +1,111 @@
+@font-face {
+	src: url('fonts/Vollkorn-Regular.ttf');
+	font-family: Vollkorn;
+}
+
+#wrapper {
+	width: 1000px;
+	margin: 0 auto;
+	font: 16px Tahoma, sans-serif;
+}
+
+header,
+.pricing-content > p {
+	font-family: Vollkorn;
+	color: #9DA6AF;
+}
+header > h1 {
+	margin: 0;
+	text-align: center;
+}
+
+header > h3 {
+	font-weight: normal;
+	text-align: center;
+	margin: 0;
+	padding: 35px 0;
+}
+ 
+header {
+	color: #9DA6AF;
+	font-family: Vollkorn;
+}
+
+#wrapper > header {
+	font-size: 40px;
+}
+
+.pricing {
+	width: 320px;
+	height: 500px;
+	float: left;
+	margin-right: 20px;
+	background-color: #F6F7F9;
+	position: relative;
+}
+
+.pricing:hover > header, 
+.pricing:hover > button {
+	background-color:  #65D3E2;
+
+}
+
+.pricing:hover > .pricing-content > p {
+	color: #65D3E2;
+}
+
+.pricing:hover > header {
+	color: #fff;
+	cursor: pointer;
+}
+
+.pricing:last-of-type {
+	margin:0;
+}
+
+.pricing > header {
+	font-size: 30px;  
+	background-color: #EBEFF2;
+}
+
+.pricing > button {
+	position: absolute;
+	bottom: 0;
+	width: 260px;
+	background-color: #CAD5D9; 
+	color: #fff;
+	border: 0;
+	height: 50px;
+	margin-bottom: 10px;
+	left: 30px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16x;
+
+}
+
+.pricing > button:hover {
+ background-color: #65D3E2;
+}
+
+.pricing-content > p {
+	font-size: 60px;
+	margin: 5px 0;
+	text-align: center;
+	cursor: pointer;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul > li {
+	color: #9DA6AF;
+	text-align: center;
+	height: 40px;
+	border-bottom: 1px solid #F1F2F4;
+	padding-top: 5px;
+	box-sizing: border-box;
+}
