@@ -24,7 +24,7 @@
 				</div>
 			</section>
 			<section>
-				<div>
+				<div class="left">
 					<header>
 						<h4>Personal Details</h4>
 					</header>
@@ -32,30 +32,39 @@
 					<input type="text" placeholder="Last Name" />
 					<input type="email" placeholder="Enter email" />
 				</div>
-				<div>
+				<div class="right">
 					<header>
 						<h4>Request a reservation</h4>
 						<div>
-							<label for="">Selecet a room</label>
-							<select name="" id="">
-								<option value="">Room 1</option>
-								<option value="">Room2</option>
-								<option value="" selected="selected">Room3</option>
-								<option value="">Room 4</option>
-							</select>
-							<label for="">Number of Rooms</label>
-							<input type="number" />
+							<div class="form-control select-room">
+								<label for="room">Selecet a room</label>
+								<select name="" id="room">
+									<option value="">Room 1</option>
+									<option value="">Room2</option>
+									<option value="" selected="selected">Room3</option>
+									<option value="">Room 4</option>
+								</select>
+							</div>
+							
+							<div class="form-control count-rooms">
+								<label for="rooms-count">Number of Rooms</label>
+								<input type="number" id="rooms-count" value="1" />
+							</div>		
 
-							<label for="">Check-In</label>
-							<input type="date"/>
+							<div class="form-control date">
+								<label for="check-In">Check-In</label>
+								<input type="date" id="check-In" />
+							</div>
 
-							<label for="">Check-Out</label>
-							<input type="date"/>
+							<div class="form-control date">
+								<label for="check-out">Check-Out</label>
+								<input type="date" id="check-out" />
+							</div>
 						</div>
 					</header>
 				</div>
 			</section>
-			<button>Book Now</button>
+			<button class="book-now">Book Now</button>
 		</main>
 	</div>
 </body>

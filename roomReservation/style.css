@@ -7,6 +7,33 @@ img {
 	width: 20px;
 }
 
+input, 
+select {
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	height: 25px;
+	line-height: 25px;
+	padding-left: 5px;
+	margin: 5px 0;
+}
+
+label {
+	display: block;
+	font-size: 10px;
+}
+
+section {
+	padding: 15px;
+}
+
+section:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	zoom: 1;
+}
+
 #wrapper {
 	font: 13px Tahoma, Helvetica, sans-serif;
 	width: 800px;
@@ -33,6 +60,7 @@ header > h1 {
 
 header > h4 {
 	font-size: 16px;
+	margin-bottom: 5px;
 }
 
 p {
@@ -40,17 +68,6 @@ p {
 	float: left;
 }
 
-section {
-	padding: 15px;
-}
-
-section:after {
-	content: "";
-	display: block;
-	clear: both;
-	height: 0;
-	zoom: 1;
-}
 
 .search {
 	float: left;
@@ -72,16 +89,67 @@ section:after {
 	cursor: pointer;
 	position: absolute;
 	right: 35px;
-	bottom: 1px;
+	bottom: 6px;
 }
 
-input {
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	height: 25px;
-	line-height: 25px;
-	padding-left: 5px;
+.left {
+	float: left;
+	width: 200px;
 }
+
+.right {
+	float: right;
+	width: 570px;
+}
+
+.form-control {
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.select-room {
+	width: 69%;
+}
+
+select {
+	width: 98%;
+}
+
+.count-rooms {
+	width: 30%;
+}
+
+.count-rooms input {
+	width: 93%;
+}
+
+.date {
+	width: 49%;
+}
+
+.date input{
+	width: 98%;
+}
+
+button.book-now {
+	float: right;
+	margin-top: 20px;
+	background-color: #32A2E4;
+	color: #fff;
+	height: 30px;
+	width: 150px;
+	border: 0;
+	border-radius: 2px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
 
 
 
