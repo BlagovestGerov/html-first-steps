@@ -148,13 +148,97 @@ body, h1, h2, h3, h4, h5, h6, p, div {
   padding: 0;
 }
 
+header:before, 
+header:after {
+  content: "";
+  height: 100%;
+}
+
+body {
+  font: 13px 'Myriad Pro';
+}
+
+.logo-and-navigation:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+  zoom: 1;
+}
+
+nav {
+  font: 13px Ubuntu;
+  float: right;
+}
+
+#wrapper {
+  width: 1100px;
+  margin: auto;
+  padding: 10px;
+  padding-top: 0;
+}
+
 #wrapper > header {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#514c84+0,4ba099+100 */
+position: relative;
+color: #fff;
+font: 20px Ubuntu;
+}
+
+#wrapper > header:before {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#514c84+0,4ba099+100 */
 background: #514c84; /* Old browsers */
 background: -moz-linear-gradient(45deg, #514c84 0%, #4ba099 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(45deg, #514c84 0%,#4ba099 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(45deg, #514c84 0%,#4ba099 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#514c84', endColorstr='#4ba099',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  position: absolute;
+  width: 100vw;
+  left: calc(-50vw + 550px);
+  z-index: -1;
 }
+
+#wrapper > header h4 {
+  font-weight: 300;
+  float: left;
+  margin: 13px 0px;
+}
+
+.logo-and-navigation {
+  border-bottom: 1px solid #607EA9;
+}
+
+ul > li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+li > a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 5px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
