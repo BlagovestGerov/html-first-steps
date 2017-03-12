@@ -171,6 +171,11 @@ nav {
   float: right;
 }
 
+nav, a:hover,
+.say-something a:hover {
+  color: #57EFFF;
+}
+
 #wrapper {
   width: 1100px;
   margin: auto;
@@ -182,6 +187,8 @@ nav {
 position: relative;
 color: #fff;
 font: 20px Ubuntu;
+padding: 20px;
+padding-top: ;
 }
 
 #wrapper > header:before {
@@ -220,6 +227,62 @@ li > a {
   margin: 5px 10px;
 }
 
+.logo-and-slogan {
+  text-align: center;
+}
+
+.logo-and-slogan h1 {
+  color: #57EFFF;
+  margin-top: 20px;
+  font: 54px Ubuntu;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.logo-and-slogan > header > p {
+  font: 16px Ubuntu;
+  margin-top: -10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.logo-and-slogan > p.slogan {
+  font: 60px Ubuntu;
+  margin-top: 40px;
+}
+
+.get-started,
+.say-something {
+  margin: 20px;
+  margin-top: 40px;
+}
+
+.get-started a {
+    border: 2px solid #fff;
+    padding: 15px 25px;
+    color: #fff;
+    text-decoration: none;
+    font: 24px Ubuntu;
+}
+
+.get-started {
+  margin-top: 100px;
+}
+
+.say-something a {
+    color: #fff;
+    font: 16px 'Myriad Pro';
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #98ACC8; 
+}
+
+.say-something a:hover {
+  border-bottom-color: #57EFFF;
+}
 
 
 
