@@ -143,7 +143,7 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, div {
+body, h1, h2, h3, h4, h5, h6, p, div, section {
   margin: 0;
   padding: 0;
 }
@@ -151,7 +151,9 @@ body, h1, h2, h3, h4, h5, h6, p, div {
 header:before, 
 header:after,
 .work-together:before,
-.work-together:after {
+.work-together:after,
+footer:before,
+footer:after {
   content: "";
   height: 100%;
 }
@@ -160,7 +162,9 @@ body {
   font: 13px 'Myriad Pro';
 }
 
-.logo-and-navigation:after {
+.logo-and-navigation:after,
+.work-better > div:after,
+footer:after {
   content: "";
   clear: both;
   display: block;
@@ -185,8 +189,7 @@ nav, a:hover,
 #wrapper {
   width: 1100px;
   margin: auto;
-  padding: 10px;
-  padding-top: 0;
+  padding: 0 10px;
 }
 
 #wrapper > header {
@@ -207,7 +210,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#514c84', end
 
   position: absolute;
   width: 100vw;
-  left: calc(-50vw + 550px);
+  left: calc(-50vw + 541px);
   z-index: -1;
 }
 
@@ -298,7 +301,8 @@ header > h3 {
   margin: 25px 0px;
 }
 
-header > h5 {
+header > h5,
+h5 {
   font: 20px Ubuntu;
   margin: 15px 0px;
 }
@@ -324,7 +328,8 @@ div.logo {
   margin-bottom: 15px;
 }
 
-.services > div > a {
+.services > div > a
+.client-feedback a {
   color: #57EFFF;
   text-decoration: none;
 }
@@ -353,7 +358,7 @@ div.logo {
 .work-together:before {
   position: absolute;
   width: 100vw;
-  left: calc(-50vw + 550px);
+  left: calc(-50vw + 541px);
   z-index: -1;
   background: #FF7978
 }
@@ -363,26 +368,69 @@ div.logo {
   letter-spacing: 2px;
 }
 
-.work-better {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
+.work-better {}
 
 .work-better > div {
-  width: 400px;
+  width: 480px;
+  display: inline-block;
+  background: #F7F8FA;
+  margin: 34px;
+  color: #6C7982;
+  box-sizing: border-box;
 }
 
+.work-better > div > p {
+  text-align: left;
+  padding: 10px;
+}
 
+.work-better > div > img {
+  float: left;
+  margin-right: 10px;
+}
 
+.client-feedback p {
+  font: 16px 'Myriad Pro';
+  color: #6C7982;
+  font-weight: bold;
+  width: 730px;
+  margin: 15px auto;
+}
 
+footer {
+  position: relative;
 
+}
 
+footer:before {
+  position: absolute;
+  width: 100vw;
+  left: calc(-50vw + 541px);
+  z-index: -1;
+  background: #282E3C;
+}
 
+footer {
+  height: 50px;
+  margin: 0;
+  margin-top: 20px;
+  color: #5D7786; 
+  font: 12px 'Myriad Pro';
+}
 
+.copy {
+  float: right;
+}
 
+.design {
+  float: left;
+}
 
-
+.copy,
+.design {
+  line-height: 50px;
+  padding:  0 20px;
+}
 
 
 
